@@ -1,15 +1,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background-color: #0f0f0f;
     color: white;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 40px 20px;
-    background-color: #1b1b1b;
-    border-bottom: 2px solid #333;
+    background-color: #1a1a1a;
 }
 
 header h1 {
@@ -21,29 +21,74 @@ header p {
     color: #aaa;
 }
 
-main {
+/* Nav bar */
+nav {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    background-color: #111;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #151515;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 40px;
 }
 
-.build-card {
+/* Cards */
+.card {
     background-color: #1e1e1e;
-    width: 600px;
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid #333;
+    transition: transform 0.2s;
 }
 
-.build-card img {
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
     width: 100%;
-    display: block;
 }
 
-.card-content {
-    padding: 20px;
+.card h3 {
+    margin: 10px;
 }
 
-.card-content h2 {
-    margin-top: 0;
+.card p {
+    margin: 0 10px 15px;
+    color: #aaa;
 }
